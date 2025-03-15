@@ -79,6 +79,6 @@ The development server will start at `http://localhost:4321`, where you can view
 
 Your Name - [jesus.jimenez.mx@proton.me](mailto:jesus.jimenez.mx@proton.me)
 
-Project Link: [JournalApp - Demo](https://jourapp.vercel.app/)
+Project Link: [AstroBlog - Demo](https://astro-blog-tan-nine.vercel.app/)
 
 Built with ❤️ using [Astro](https://astro.build) and [Bun](https://bun.sh)
