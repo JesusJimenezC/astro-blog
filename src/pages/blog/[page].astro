@@ -1,0 +1,63 @@
+---
+import type { GetStaticPaths } from "astro";
+import TypedBlogPost from '@components/TypedBlogPost.astro';
+import Layout from '@layouts/Layout.astro';
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const blogPost = await getCollection("blog") as CollectionEntry<"blog">[];
+
+  return paginate(blogPost, { pageSize: 2 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+<Layout>
+  <div class="py-10 mx-auto">
+    <h1 class="text-3xl font-semibold capitalize lg:text-4xl text-black">
+      Jesus's Blog Paginated
+    </h1>
+
+    <a class="back-btn" href="/">Main Page</a>
+  </div>
+
+
+  <section class="bg-white dark:bg-gray-900" aria-label="Entradas de blog">
+    <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
+      {page.data.map((post) => <TypedBlogPost post={post} />)}
+    </div>
+  </section>
+
+  <section aria-label="Controles" class="flex justify-between mt-10">
+
+    <a
+      href={page.url.prev}
+      class:list={{
+        disabled: !page.url.prev,
+      }}>Prev</a
+    >
+
+    <a
+      href={page.url.next}
+      class:list={{
+        disabled: !page.url.next,
+      }}>Next</a
+    >
+  </section>
+</Layout>
+
+<style>
+    @import "../../styles/global.css";
+
+    a:not(.back-btn) {
+        @apply bg-blue-500 text-white p-2 rounded hover:bg-blue-600 cursor-pointer;
+    }
+
+    .back-btn {
+        @apply text-blue-500 hover:underline cursor-pointer;
+    }
+
+    .disabled {
+        @apply bg-gray-600 hover:bg-gray-600;
+    }
+</style>
