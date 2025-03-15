@@ -1,47 +1,78 @@
-# Astro Starter Kit: Minimal
+# Astro Blog
 
-```sh
-bun create astro@latest -- --template minimal
+## Overview and Objectives
+
+This project is a modern, fast blog platform built with Astro. It focuses on delivering a seamless reading experience with optimized performance through static site generation.
+
+**Objectives:**
+- Create a responsive, accessible blog platform
+- Implement content organization with authors and categories
+- Provide optimized image loading and formatting
+- Ensure fast loading times and good SEO practices
+- Support Markdown and MDX for rich content creation
+
+## Features & Technologies
+
+| Technology | Purpose |
+|------------|---------|
+| [Astro](https://astro.build/) | Framework for building fast, content-focused websites with less JavaScript |
+| [TailwindCSS](https://tailwindcss.com/) | Utility-first CSS framework for rapid UI development |
+| [MDX](https://mdxjs.com/) | Markdown extension that allows embedding JSX components in content |
+| [Bun](https://bun.sh/) | JavaScript runtime and package manager for faster development and execution |
+| [TypeScript](https://www.typescriptlang.org/) | Static typing for better code quality and developer experience |
+| [Image Optimization](https://docs.astro.build/en/guides/images/) | Automatic image optimization using Astro's built-in image processing |
+| [Content Collections](https://docs.astro.build/en/guides/content-collections/) | Type-safe content management system for blog posts and authors |
+
+## Project Structure
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+├── public/           # Static assets served as-is
+├── src/              # Source code
+│   ├── assets/       # Images and other assets processed by Astro
+│   ├── components/   # Reusable UI components
+│   ├── config/       # Configuration files for the application
+│   ├── content/      # Content collections (blog posts, authors)
+│   │   ├── author/   # Author information 
+│   │   └── blog/     # Blog posts in Markdown/MDX
+│   ├── layouts/      # Page layouts and templates
+│   ├── pages/        # Route definition files
+│   ├── styles/       # Global stylesheets
+│   └── utils/        # Utility functions and helpers
+├── astro.config.mjs  # Astro configuration
+├── package.json      # Project dependencies and scripts
+└── tsconfig.json     # TypeScript configuration
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Commands and Initialization
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+To get started with this project, follow these commands:
 
-Any static assets, like images, can be placed in the `public/` directory.
+```bash
+# Install dependencies
+bun install
 
-## 🧞 Commands
+# Start the development server
+bun dev
 
-All commands are run from the root of the project, from a terminal:
+# Build the production site
+bun build
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+# Preview the production build locally
+bun preview
 
-## 👀 Want to learn more?
+# Run Astro CLI commands
+bun astro [command]
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The development server will start at `http://localhost:4321`, where you can view the blog.
+
+### Content Management
+
+- Add new blog posts by creating Markdown or MDX files in `src/content/blog/`
+- Add new authors by creating entries in `src/content/author/`
+- Configure content schemas in `src/content/config.ts`
+
+---
+
+Built with ❤️ using [Astro](https://astro.build) and [Bun](https://bun.sh)
