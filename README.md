@@ -77,7 +77,7 @@ The development server will start at `http://localhost:4321`, where you can view
 
 ## Contact
 
-Your Name - [jesus.jimenezc.mx@gmail.com](mailto:jesus.jimenez.mx@proton.me)
+Your Name - [jesus.jimenez.mx@proton.me](mailto:jesus.jimenez.mx@proton.me)
 
 Project Link: [JournalApp - Demo](https://jourapp.vercel.app/)
 
