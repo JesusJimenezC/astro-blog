@@ -77,8 +77,8 @@ The development server will start at `http://localhost:4321`, where you can view
 
 ## Contact
 
-Your Name - [jesus.jimenez.mx@proton.me](mailto:jesus.jimenez.mx@proton.me)
+Jesus Jimenez Cordero - [jesus.jimenez.mx@proton.me](mailto:jesus.jimenez.mx@proton.me)
 
-Project Link: [AstroBlog - Demo](https://astro-blog-tan-nine.vercel.app/)
+DEMO: [AstroBlog - Demo](https://astro-blog-tan-nine.vercel.app/)
 
 Built with ❤️ using [Astro](https://astro.build) and [Bun](https://bun.sh)
