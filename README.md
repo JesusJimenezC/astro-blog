@@ -15,13 +15,13 @@ This project is a modern, fast blog platform built with Astro. It focuses on del
 
 | Technology | Purpose |
 |------------|---------|
-| [Astro](https://astro.build/){:target="_blank"} | Framework for building fast, content-focused websites with less JavaScript |
-| [TailwindCSS](https://tailwindcss.com/){:target="_blank"} | Utility-first CSS framework for rapid UI development |
-| [MDX](https://mdxjs.com/){:target="_blank"} | Markdown extension that allows embedding JSX components in content |
-| [Bun](https://bun.sh/){:target="_blank"} | JavaScript runtime and package manager for faster development and execution |
-| [TypeScript](https://www.typescriptlang.org/){:target="_blank"} | Static typing for better code quality and developer experience |
-| [Image Optimization](https://docs.astro.build/en/guides/images/){:target="_blank"} | Automatic image optimization using Astro's built-in image processing |
-| [Content Collections](https://docs.astro.build/en/guides/content-collections/){:target="_blank"} | Type-safe content management system for blog posts and authors |
+| [Astro](https://astro.build/) | Framework for building fast, content-focused websites with less JavaScript |
+| [TailwindCSS](https://tailwindcss.com/) | Utility-first CSS framework for rapid UI development |
+| [MDX](https://mdxjs.com/) | Markdown extension that allows embedding JSX components in content |
+| [Bun](https://bun.sh/) | JavaScript runtime and package manager for faster development and execution |
+| [TypeScript](https://www.typescriptlang.org/) | Static typing for better code quality and developer experience |
+| [Image Optimization](https://docs.astro.build/en/guides/images/) | Automatic image optimization using Astro's built-in image processing |
+| [Content Collections](https://docs.astro.build/en/guides/content-collections/) | Type-safe content management system for blog posts and authors |
 
 ## Project Structure
 
@@ -79,6 +79,6 @@ The development server will start at `http://localhost:4321`, where you can view
 
 Jesus Jimenez Cordero - [jesus.jimenez.mx@proton.me](mailto:jesus.jimenez.mx@proton.me)
 
-Project link: [AstroBlog - Demo](https://astro-blog-tan-nine.vercel.app/){:target="_blank"}
+Project link: [AstroBlog - Demo](https://astro-blog-tan-nine.vercel.app/)
 
-Built with ❤️ using [Astro](https://astro.build){:target="_blank"} and [Bun](https://bun.sh){:target="_blank"}
+Built with ❤️ using [Astro](https://astro.build) and [Bun](https://bun.sh)
